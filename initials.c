@@ -24,7 +24,7 @@ int main(void)
     {
         if (counter == 0)
         {
-            if (name [i] != " ")
+            if (name [i] != ' ')
             {
                 initials = toupper(name[i]);
                 printf ("%s\n",initials);
@@ -33,7 +33,7 @@ int main(void)
         }
         if (counter == 1)
         {
-            if (name [i] == " ")
+            if (name [i] == ' ')
                 counter = 1;               
         }
         
