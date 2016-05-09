@@ -12,10 +12,9 @@ int main(void)
 {
     string name;
     int counter = 0;
-    int initials;
+    char initials;
     do
     {
-        printf ("Input your name:\n");
         name = GetString();
     }
     while (name == NULL);
@@ -27,19 +26,16 @@ int main(void)
             if (name [i] != ' ')
             {
                 initials = toupper(name[i]);
-                printf ("%s\n",initials);
+                printf ("%c",initials);
                 counter = 1;
             }                
         }
         if (counter == 1)
         {
             if (name [i] == ' ')
-                counter = 1;               
+                counter = 0;               
         }
         
-    
-    
     }
     printf ("\n");
-
 }
