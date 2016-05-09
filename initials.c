@@ -12,7 +12,7 @@ int main(void)
 {
     string name;
     int counter = 0;
-    int initials[];
+    int initials;
     do
     {
         printf ("Input your name:\n");
@@ -27,6 +27,7 @@ int main(void)
             if (name [i] != " ")
             {
                 initials = toupper(name[i]);
+                printf ("%s\n",initials);
                 counter = 1;
             }                
         }
@@ -39,10 +40,6 @@ int main(void)
     
     
     }
-    printf ("%s\n",initials);
-
-
-
-
+    printf ("\n");
 
 }
